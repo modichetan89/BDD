@@ -1,0 +1,78 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Free CRM Login test scenario",
+        "description": "",
+        "id": "free-crm-login-feature;free-crm-login-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8684743254,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is already on login page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 21681761,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Title of login page is freeCRM",
+            "match": {
+              "location": "LoginStepDefinition.title_of_login_page_is_freeCRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 342410267,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters username and password",
+            "match": {
+              "location": "LoginStepDefinition.user_enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User clicks on Login button",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User is on homepage",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM login feature",
+    "description": "",
+    "id": "free-crm-login-feature",
+    "keyword": "Feature",
+    "uri": "D:/Workspace/FreeCrmBDD/src/main/java/Features/login.feature"
+  }
+]
