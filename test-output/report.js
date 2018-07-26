@@ -1,71 +1,150 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("D:/Workspace/FreeCrmBDD/src/main/java/Features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("D:/Workspace/FreeCrmBDD/src/main/java/Features/tagging.feature");
 formatter.feature({
-  "line": 1,
-  "name": "Free CRM login feature",
+  "line": 2,
+  "name": "Tagging Demo",
   "description": "",
-  "id": "free-crm-login-feature",
-  "keyword": "Feature"
+  "id": "tagging-demo",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@FunctionalTest"
+    }
+  ]
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Free CRM Login test scenario",
-  "description": "",
-  "id": "free-crm-login-feature;free-crm-login-test-scenario",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
   "line": 5,
-  "name": "User is already on login page",
-  "keyword": "Given "
+  "name": "Login to application",
+  "description": "",
+  "id": "tagging-demo;login-to-application",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 4,
+      "name": "@RegressionTest"
+    }
+  ]
 });
 formatter.step({
   "line": 6,
-  "name": "Title of login page is freeCRM",
-  "keyword": "When "
+  "name": "User login with valid credentials",
+  "keyword": "Given "
 });
-formatter.step({
-  "line": 7,
-  "name": "User enters username and password",
-  "keyword": "Then "
+formatter.match({
+  "location": "TaggingStepDefinition.user_login_with_valid_credentials()"
 });
-formatter.step({
-  "line": 8,
-  "name": "User clicks on Login button",
-  "keyword": "Then "
+formatter.result({
+  "status": "skipped"
 });
-formatter.step({
+formatter.scenario({
   "line": 9,
-  "name": "User is on homepage",
-  "keyword": "Then "
+  "name": "Login to application with invalid credentials",
+  "description": "",
+  "id": "tagging-demo;login-to-application-with-invalid-credentials",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 8,
+      "name": "@SmokeTest"
+    },
+    {
+      "line": 8,
+      "name": "@RegressionTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 10,
+  "name": "User login with invalid credentials",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_is_already_on_login_page()"
+  "location": "TaggingStepDefinition.user_login_with_invalid_credentials()"
 });
 formatter.result({
-  "duration": 8684743254,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 13,
+  "name": "Validate links",
+  "description": "",
+  "id": "tagging-demo;validate-links",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 12,
+      "name": "@End2EndTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 14,
+  "name": "Clicking on all links present on page",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginStepDefinition.title_of_login_page_is_freeCRM()"
+  "location": "TaggingStepDefinition.clicking_on_all_links_present_on_page()"
 });
 formatter.result({
-  "duration": 21681761,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 17,
+  "name": "Adding the contacts",
+  "description": "",
+  "id": "tagging-demo;adding-the-contacts",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 16,
+      "name": "@SmokeTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 18,
+  "name": "User is on contact page",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_enters_username_and_password()"
+  "location": "TaggingStepDefinition.user_is_on_contact_page()"
 });
 formatter.result({
-  "duration": 342410267,
-  "status": "passed"
+  "status": "skipped"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.scenario({
+  "line": 29,
+  "name": "Logout from application",
+  "description": "",
+  "id": "tagging-demo;logout-from-application",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 28,
+      "name": "@RegressionTest"
+    },
+    {
+      "line": 28,
+      "name": "@End2EndTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 30,
+  "name": "User logout from application",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_is_on_homepage()"
+  "location": "TaggingStepDefinition.user_logout_from_application()"
 });
 formatter.result({
   "status": "skipped"

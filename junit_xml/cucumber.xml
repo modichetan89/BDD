@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="9.048835">
-<testcase classname="Free CRM login feature" name="Free CRM Login test scenario" time="9.048835">
-<skipped><![CDATA[Given User is already on login page.........................................passed
-When Title of login page is freeCRM.........................................passed
-Then User enters username and password......................................passed
-Then User clicks on Login button............................................undefined
-Then User is on homepage....................................................skipped
-]]></skipped>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="0">
+<testcase classname="Tagging Demo" name="Login to application" time="0">
+<system-out><![CDATA[Given User login with valid credentials.....................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Tagging Demo" name="Login to application with invalid credentials" time="0">
+<system-out><![CDATA[Given User login with invalid credentials...................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Tagging Demo" name="Validate links" time="0">
+<system-out><![CDATA[Given Clicking on all links present on page.................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Tagging Demo" name="Adding the contacts" time="0">
+<system-out><![CDATA[Given User is on contact page...............................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Tagging Demo" name="Logout from application" time="0">
+<system-out><![CDATA[Given User logout from application..........................................skipped
+]]></system-out>
 </testcase>
 </testsuite>

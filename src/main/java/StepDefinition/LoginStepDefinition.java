@@ -1,4 +1,4 @@
-package StepDefinition;
+/*package StepDefinition;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -51,3 +51,4 @@ public class LoginStepDefinition {
 		Assert.assertEquals("CRMPRO", AfterLoginTitle);
 	}
 }
+*/
