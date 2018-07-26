@@ -17,3 +17,5 @@ Scenario: Add payment
 Given User is on payment page
 When User clicks on Add payment button
 Then Payment saved into account
+
+#Comment added to see git changes
