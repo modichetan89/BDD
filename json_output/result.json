@@ -1,165 +1,306 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 5,
-        "name": "Login to application",
+        "before": [
+          {
+            "result": {
+              "duration": 228821,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.envSetup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 109278,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.envSetup1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 92374,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.localBefore()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Add product to basket",
         "description": "",
-        "id": "tagging-demo;login-to-application",
+        "id": "hooks-demo;add-product-to-basket",
+        "after": [
+          {
+            "result": {
+              "duration": 231839,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.localAfter()"
+            }
+          },
+          {
+            "result": {
+              "duration": 59771,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 52526,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 168466537,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on product detail page",
+            "match": {
+              "location": "hooksStepDefinition.user_is_on_product_detail_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 109882,
+              "status": "passed"
             },
             "line": 6,
-            "name": "User login with valid credentials",
+            "name": "User clicks on Add Product button",
             "match": {
-              "location": "TaggingStepDefinition.user_login_with_valid_credentials()"
+              "location": "hooksStepDefinition.user_clicks_on_Add_Product_button()"
             },
-            "keyword": "Given "
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73053,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Product successfully added to basket",
+            "match": {
+              "location": "hooksStepDefinition.product_successfully_added_to_basket()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 4,
-            "name": "@SmokeTest"
-          },
-          {
-            "line": 4,
-            "name": "@RegressionTest"
+            "line": 3,
+            "name": "@First"
           }
         ]
       },
       {
-        "line": 9,
-        "name": "Login to application with invalid credentials",
+        "before": [
+          {
+            "result": {
+              "duration": 77884,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.envSetup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 75468,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.envSetup1()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Add address",
         "description": "",
-        "id": "tagging-demo;login-to-application-with-invalid-credentials",
+        "id": "hooks-demo;add-address",
+        "after": [
+          {
+            "result": {
+              "duration": 56148,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 56752,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 75468,
+              "status": "passed"
             },
-            "line": 10,
-            "name": "User login with invalid credentials",
+            "line": 11,
+            "name": "User is on Address page",
             "match": {
-              "location": "TaggingStepDefinition.user_login_with_invalid_credentials()"
+              "location": "hooksStepDefinition.user_is_on_Address_page()"
             },
             "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "line": 8,
-            "name": "@SmokeTest"
           },
           {
-            "line": 8,
-            "name": "@RegressionTest"
-          }
-        ]
-      },
-      {
-        "line": 13,
-        "name": "Validate links",
-        "description": "",
-        "id": "tagging-demo;validate-links",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
             "result": {
-              "status": "skipped"
+              "duration": 76676,
+              "status": "passed"
             },
-            "line": 14,
-            "name": "Clicking on all links present on page",
-            "match": {
-              "location": "TaggingStepDefinition.clicking_on_all_links_present_on_page()"
-            },
-            "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
             "line": 12,
-            "name": "@End2EndTest"
+            "name": "User clicks on Add Address button",
+            "match": {
+              "location": "hooksStepDefinition.user_clicks_on_Add_Address_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68827,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Address saved into account",
+            "match": {
+              "location": "hooksStepDefinition.address_saved_into_account()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Second"
           }
         ]
       },
       {
-        "line": 17,
-        "name": "Adding the contacts",
+        "before": [
+          {
+            "result": {
+              "duration": 71846,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.envSetup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 59168,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.envSetup1()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Add payment",
         "description": "",
-        "id": "tagging-demo;adding-the-contacts",
+        "id": "hooks-demo;add-payment",
+        "after": [
+          {
+            "result": {
+              "duration": 247537,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 44073,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooksStepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 81506,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User is on payment page",
+            "match": {
+              "location": "hooksStepDefinition.user_is_on_payment_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 73054,
+              "status": "passed"
             },
             "line": 18,
-            "name": "User is on contact page",
+            "name": "User clicks on Add payment button",
             "match": {
-              "location": "TaggingStepDefinition.user_is_on_contact_page()"
+              "location": "hooksStepDefinition.user_clicks_on_Add_payment_button()"
             },
-            "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "line": 16,
-            "name": "@SmokeTest"
-          }
-        ]
-      },
-      {
-        "line": 29,
-        "name": "Logout from application",
-        "description": "",
-        "id": "tagging-demo;logout-from-application",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 30,
-            "name": "User logout from application",
-            "match": {
-              "location": "TaggingStepDefinition.user_logout_from_application()"
-            },
-            "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "line": 28,
-            "name": "@RegressionTest"
+            "keyword": "When "
           },
           {
-            "line": 28,
-            "name": "@End2EndTest"
+            "result": {
+              "duration": 68828,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Payment saved into account",
+            "match": {
+              "location": "hooksStepDefinition.payment_saved_into_account()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@Third"
           }
         ]
       }
     ],
-    "name": "Tagging Demo",
+    "name": "Hooks Demo",
     "description": "",
-    "id": "tagging-demo",
+    "id": "hooks-demo",
     "keyword": "Feature",
-    "uri": "D:/Workspace/FreeCrmBDD/src/main/java/Features/tagging.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@FunctionalTest"
-      }
-    ]
+    "uri": "D:/Workspace/FreeCrmBDD/src/main/java/Features/hooks.feature"
   }
 ]

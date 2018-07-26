@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="0">
-<testcase classname="Tagging Demo" name="Login to application" time="0">
-<system-out><![CDATA[Given User login with valid credentials.....................................skipped
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.170557">
+<testcase classname="Hooks Demo" name="Add product to basket" time="0.169424">
+<system-out><![CDATA[Given User is on product detail page........................................passed
+When User clicks on Add Product button......................................passed
+Then Product successfully added to basket...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tagging Demo" name="Login to application with invalid credentials" time="0">
-<system-out><![CDATA[Given User login with invalid credentials...................................skipped
+<testcase classname="Hooks Demo" name="Add address" time="0.000487">
+<system-out><![CDATA[Given User is on Address page...............................................passed
+When User clicks on Add Address button......................................passed
+Then Address saved into account.............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tagging Demo" name="Validate links" time="0">
-<system-out><![CDATA[Given Clicking on all links present on page.................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="Tagging Demo" name="Adding the contacts" time="0">
-<system-out><![CDATA[Given User is on contact page...............................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="Tagging Demo" name="Logout from application" time="0">
-<system-out><![CDATA[Given User logout from application..........................................skipped
+<testcase classname="Hooks Demo" name="Add payment" time="0.000646">
+<system-out><![CDATA[Given User is on payment page...............................................passed
+When User clicks on Add payment button......................................passed
+Then Payment saved into account.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
